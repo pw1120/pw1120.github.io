@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>kreative Theme Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/font-awesome.css" type="text/css" />
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="./index.html">Kreative :: Resume Template</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+             <li> <a href="./index.html">Start Here</a> </li>
+          <li class="active"> <a href="./content.html">Content</a> </li>
+          <li class=""> <a href="./basic_styles.html">Basic Styles</a> </li>
+          <li class=""> <a href="./credits.html">Credits</a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Subhead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <h1>kreative Theme <small>/ Content</small></h1>
+    <p class="lead">This file will help you getting started with the Content</p>
+  </div>
+</header>
+
+  <div class="container">
+
+    <!-- Docs nav
+    ================================================== -->
+    <div class="row">
+      <div class="span12">
+
+
+
+        <!-- Global Bootstrap settings
+        ================================================== -->
+        <section>
+        
+        
+            <h1>Home Page Preview</h1>
+            
+            <h3>Home Container</h3>
+            
+            <p><code>&lt;div id="thumbnails" class="pt-page pt-page-current"&gt; ... &lt;/div&gt;</code></p>
+            
+            
+            <h3>1st Row Container</h3>
+            
+            <p><code>&lt;div class="row" data-id="one"&gt; ... &lt;/div&gt;</code></p>
+            
+            <h4>Related Script</h4>
+            <pre class="prettyprint linenums">$('[data-id="one"] figure.big .content').off('click.click').on('click.click',function(e) {</pre>
+            
+            <h3>2nd Row  Container</h3>
+            
+            <p><code>&lt;div class="row" data-id="two"&gt; ... &lt;/div&gt;</code></p>
+            <h4>Related Script</h4>
+            <pre class="prettyprint linenums">$('[data-id="two"] figure.makebig .content').live("click",function() {</pre>
+            
+            <h3>3rd Row Container</h3>
+            
+            <p><code>&lt;div class="row" data-id="three"&gt; ... &lt;/div&gt;</code></p>
+            <h4>Related Script</h4>
+            <pre class="prettyprint linenums">$('[data-id="three"] figure.makebig .content').live("click",function() {</pre>
+            
+            <h3>4th Row Container</h3>
+            
+            <p><code>&lt;div class="row" data-id="four"&gt; ... &lt;/div&gt;</code></p>
+            <h4>Related Script</h4>
+            <pre class="prettyprint linenums">$('[data-id="four"] figure.makebig .content').live("click",function() {</pre>
+            
+            <h3>Big Image Container</h3>
+            
+            <p><code>&lt;figure class="big makebig ColumnLOne"&gt; ... &lt;/figure&gt;</code></p>
+            
+            <h3>Small Image Container</h3>
+            
+            <p><code>&lt;figure class="ColumnRTwo callpost"&gt; ... &lt;/figure&gt;</code></p>
+            
+            
+            <hr class="bs-docs-separator">
+            
+            
+            <h3>Home Images</h3>
+            <p>All images are inside the image root folder</p>
+            <p><code>&lt;div class="hiddenscroll"&gt; ... &lt;/div&gt;</code></p>
+            
+            
+            <hr class="bs-docs-separator">
+            
+            
+            <h3>Main Menu</h3>
+            <p>All Menu animations are defined inside <code>custom.js</code> as functions</p>
+			
+            <p><strong>Home page Menu</strong></p>
+            <pre class="prettyprint linenums">$(".gal").click(function() { ...</pre>
+            
+            <p><strong>About page Menu</strong></p>
+            <pre class="prettyprint linenums">function aboutcube(){<br/>if( presentPageforcube == "about"){<br/>}<br/>else{<br/>	document.getElementById('aboutus').className += ' pt-page-ontop pt-page-current pt-page-rotateUnfoldRight';<br/>document.getElementById('thumbnails').className += ' pt-page-moveToLeftFade';<br/>document.getElementById('contactus').className += ' pt-page-moveToLeftFade';<br/>document.getElementById('team').className += ' pt-page-moveToLeftFade';<br/>document.getElementById('blog').className += ' pt-page-moveToLeftFade';<br/>$(".smallimg").removeClass("leftpos");<br/>
+	presentPageforcube = "about";	<br/>setTimeout(aboutalertFunc, 1000);<br/>}<br/>}</pre>
+            
+            <p><strong>Contact page Menu</strong></p>
+            <pre class="prettyprint linenums">function contactcube(){<br/>if( presentPageforcube == "contact"){<br/>}<br/>else{<br/>	document.getElementById('contactus').className += ' pt-page-ontop pt-page-current pt-page-rotateUnfoldRight';<br/>document.getElementById('thumbnails').className += ' pt-page-moveToLeftFade';<br/>document.getElementById('aboutus').className += ' pt-page-moveToLeftFade';<br/>document.getElementById('team').className += ' pt-page-moveToLeftFade';<br/>document.getElementById('blog').className += ' pt-page-moveToLeftFade';<br/>$(".smallimg").removeClass("leftpos");<br/>	presentPageforcube = "contact";	<br/>setTimeout(contactalertFunc, 1000);<br/>}<br/>}</pre>
+            
+            <p><strong>Team page Menu</strong></p>
+            <pre class="prettyprint linenums">function teamcube(){<br/>if( presentPageforcube == "team"){<br/>}<br/>else{<br/>	document.getElementById('team').className += ' pt-page-ontop pt-page-current pt-page-rotateUnfoldRight';<br/>document.getElementById('thumbnails').className += ' pt-page-moveToLeftFade';<br/>document.getElementById('aboutus').className += ' pt-page-moveToLeftFade';<br/>document.getElementById('contactus').className += ' pt-page-moveToLeftFade';<br/>document.getElementById('blog').className += ' pt-page-moveToLeftFade';<br/>$(".smallimg").removeClass("leftpos");<br/>	presentPageforcube = "team";<br/>setTimeout(teamalertFunc, 1000);<br/>}<br/>}</pre>
+            
+            <p><strong>Blog page Menu</strong></p>
+            <pre class="prettyprint linenums">function blogcube(){<br/>if( presentPageforcube == "blog"){<br/>}<br/>else{<br/>	document.getElementById('blog').className += ' pt-page-ontop pt-page-current pt-page-rotateUnfoldRight';<br/>document.getElementById('thumbnails').className += ' pt-page-moveToLeftFade';<br/>document.getElementById('aboutus').className += ' pt-page-moveToLeftFade';<br/>document.getElementById('contactus').className += ' pt-page-moveToLeftFade';<br/>document.getElementById('team').className += ' pt-page-moveToLeftFade';<br/>$(".smallimg").removeClass("leftpos");<br/>	presentPageforcube = "blog";<br/>setTimeout(blogalertFunc, 1000);<br/>}<br/>}</pre>
+            
+                   
+        </section>
+        
+        <section>
+        
+        
+            <h1>Contact Page Preview</h1>
+            
+            <h3>Contact Container</h3>
+            
+            <p><code>&lt;div id="contactus" class="pt-page"&gt; ... &lt;/div&gt;</code></p>
+            
+            <hr class="bs-docs-separator">
+            
+            
+            <h3>Contact Images</h3>
+            <p>All images are inside the <code>images</code>  folder</p>
+            
+           
+            
+                   
+        </section>
+        
+        
+        <section>
+        
+        
+            <h1>About Us Page Preview</h1>
+            
+            <h3>About Us Container</h3>
+            
+            <p><code>&lt;div id="aboutus" class="pt-page"&gt; ... &lt;/div&gt;</code></p>
+            
+            <hr class="bs-docs-separator">
+            
+            
+            <h3>About Us Images</h3>
+            <p>All images are inside the <code>images</code>  folder</p>
+            
+                   
+            
+                   
+        </section>
+        
+        <section>
+        
+        
+            <h1>Team Page Preview</h1>
+            
+            <h3>Team Container</h3>
+            
+            <p><code>&lt;div id="team" class="pt-page"&gt; ... &lt;/div&gt;</code></p>
+            
+            <hr class="bs-docs-separator">
+            
+            
+            <h3>Team Images</h3>
+            <p>All images are inside the <code>images</code>  folder</p>
+            
+            <hr class="bs-docs-separator">
+            
+            
+            <h3>Team Slider</h3>
+            <p>All images are inside the <code>&lt;div class="postimagearea"&gt;</code>  div</p>
+            <p>All content are inside the <code>&lt;div class="contentRight"&gt;</code>  div</p>
+            
+            <pre class="prettyprint linenums">$("#team .next").live("click",function() {</pre>
+            
+           <pre class="prettyprint linenums"> $("#team .previous").live("click",function() {</pre>	
+            
+                   
+        </section>
+        
+        <section>
+        
+        
+            <h1>Blog Page Preview</h1>
+            
+            <h3>Blog Container</h3>
+            
+            <p><code>&lt;div id="blog" class="pt-page"&gt; ... &lt;/div&gt;</code></p>
+            
+            <hr class="bs-docs-separator">
+            
+            
+            <h3>Blog Images</h3>
+            <p>All images are inside the <code>images</code>  folder</p>
+            
+            <hr class="bs-docs-separator">
+            
+            
+            <h3>Blog Slider</h3>
+            <p>All images are inside the <code>&lt;div class="postimagearea"&gt;</code>  div</p>
+            <p>All content are inside the <code>&lt;div class="contentRight"&gt;</code>  div</p>
+            
+            <pre class="prettyprint linenums">$("#blog .next").live("click",function() {</pre>
+            
+           <pre class="prettyprint linenums"> $("#blog .previous").live("click",function() {</pre>	
+            
+                   
+        </section>
+        
+        
+        
+        <section>
+        
+        
+            <h1>Posts Page Preview</h1>
+            
+            <h3>Posts Container</h3>
+            
+            <p><code>&lt;div id="posts"&gt; ... &lt;/div&gt;</code></p>
+            
+            <hr class="bs-docs-separator">
+            
+            
+            <h3>Posts Images</h3>
+            <p>All images are inside the <code>images</code>  folder</p>
+            
+            <hr class="bs-docs-separator">
+            
+            
+            <h3>Posts Slider</h3>
+            <p>All images are inside the <code>&lt;div class="postimagearea"&gt;</code>  div</p>
+            <p>All content are inside the <code>&lt;div class="contentRight"&gt;</code>  div</p>
+            
+            <pre class="prettyprint linenums">$("#posts .next").live("click",function() {</pre>
+            
+           <pre class="prettyprint linenums"> $("#posts .previous").live("click",function() {</pre>	
+            
+                   
+        </section>
+        
+        
+        
+        
+         
+        
+         
+        
+        
+        
+        
+        
+       
+
+
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p>Copyright by <a href="http://themeify.com" target="_blank">Themeify.com</a></p>
+      </div>
+    </footer>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/bootstrap-affix.js"></script>
+
+    <script src="assets/js/holder/holder.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+
+    <script src="assets/js/application.js"></script>
+
+
+
+  </body>
+</html>
