@@ -1,4 +1,4 @@
-[welcome](https://github.com/pw1120/pw1120.github.io/test.md)
+[welcome](https://github.com/pw1120/test.md)
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/panwei1120/panwei/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
