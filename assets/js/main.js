@@ -111,7 +111,7 @@
 			 var anchor = $(this).attr('href');
 			  var top = $(anchor).offset().top;
 			     $('html, body').animate({
-						scrollTop: $(anchor).offset().top
+						scrollTop: $(anchor).offset().top+1
 					}, 1000);
 		  });
         /*bottom to top*/
