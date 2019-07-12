@@ -1,0 +1,295 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Brief Introduction Of Dormitory</title>
+	<meta charset="utf-8" />
+    <style type="text/css">
+        #mybody{margin:-10px auto;width:1500px}
+        #header{text-align:center;width:1500px;height:92px;background-image:url(img/28.png);background-position:center 0;background-repeat:no-repeat;}
+        #nav{width:1500px;height:40px;color:#ffffff;line-height:40px;text-align:center;background-color:#2F4F4F;margin-top:-16px;}
+        #ul{margin:0 auto;width:950px;list-style-type:none;text-align:center;}
+        #nav li{margin:0 auto;float:left;text-align:center;font-size:16px;width:12em;padding:1px 8px;}
+        #nav a{font-size:16px;text-align:center;display:block;}
+        #nav a:link,a:visited,a:active{color:#ffffff;text-decoration:none;}
+        #nav a:hover{background-color:#708090;text-align:center;display:block;width:10em;}
+        #music_btn2{float:right;margin-top:25px;}
+        #jianjie{text-align:center;width:1500px;height:500px;background-image:url(img/16.jpg);background-position:center 0;margin-top:-16px;background-repeat:no-repeat;}
+        #wenhua{text-align:center;width:1500px;height:600px;background-image:url(img/16.jpg);background-position:center 0;margin-top:-16px;background-repeat:no-repeat;}
+        #gongyue{text-align:center;width:1500px;height:700px;background-image:url(img/16.jpg);background-position:center 0;margin-top:-16px;background-repeat:no-repeat;}
+        #chenyuan{text-align:center;width:1500px;height:500px;background-image:url(img/16.jpg);background-position:center 0;margin-top:-16px;background-repeat:no-repeat;}
+        #zhaopian{text-align:center;width:1500px;height:700px;background-image:url(img/16.jpg);background-position:center 0;margin-top:-16px;background-repeat:no-repeat;}
+        #qita{text-align:center;width:1500px;height:700px;background-image:url(img/16.jpg);background-position:center 0;margin-top:-16px;background-repeat:no-repeat;}
+        #footer{background-color:#FFFFFF;clear:both;text-align:center;font-size:16px;line-height:20px;}
+        #bt{font-size:28px;font-weight:bold;}
+        #dl{background-image:url(img/29.png);background-position:right 0;background-repeat:no-repeat;text-align:center;}
+        #d2{background-image:url(img/29.png);background-position:center 50px;background-repeat:no-repeat;text-align:center;}
+        #d3{background-image:url(img/29.png);background-position:left 200px;background-repeat:no-repeat;text-align:center;}
+        #d4{background-image:url(img/29.png);background-position:center 50px;background-repeat:no-repeat;text-align:center;}
+        #d7{background-image:url(img/29.png);background-position:right 100px;background-repeat:no-repeat;text-align:center;}
+        h3{text-align:center;color:red;}
+        #div1{padding-left:175px;padding-right:175px;margin-top:50px;overflow:hidden;}
+        #div1 ul{list-style:none;margin:0 -14px;}
+        #div1 li{float:left;margin-left:10px;}
+        .div1:hover .divz{display:block;}
+        .div{width:240px;height:320px;position:relative;}
+        .div img{position: absolute;width:240px;margin:0 -120px;}
+        .div h5{position: absolute;background:url("img/head-b1g.png");font-size:20px;width:215px;line-height:45px;color:#FFF;padding:0 5%;margin:220px 0;}
+        .div{display:block;overflow:hidden;}
+        .div:hover img{transform:scale(1.1,1.1);}
+        .div:hover{cursor:pointer;}
+        .div:hover h5{display:none;}
+        .div:hover .divz h1{position:absolute;display:block;color:black;margin:0 80px;margin-top:40px;}
+        .div:hover .divz p{position:absolute;display:block;color:#ffffff;font-weight:bolder;margin-top:80px;padding:0 10%;height:160px;overflow:hidden;}
+        .div:hover .divz a{position:absolute;display:block;width:120px;height:35px;border:1px solid #FFF;text-align:center;line-height:35px;font-size:14px;color:#FFF;display:block;margin:230px 60px;}
+        .bottom:hover{background-color:#e60012;color:#FFF;}
+        .divzp{margin:0 400px;text-align:center;}
+        .container1{margin:0 250px;text-align:center;}
+        ul.gallery li a{float:left;padding:10px;border:1px dashed #FFF;background-color:#EEE;box-shadow:2px 4px 15px #333;}
+        ul.gallery1 li a{float:left;padding:10px;border:1px dashed #FFF;background-color:#EEE;box-shadow:2px 4px 15px #333;}
+        ul.gallery li a.pic-1{z-index:2;transform:rotate(-15deg);-webkit-transform:rotate(-15deg);-moz-transform:rotate(-15deg);}
+        ul.gallery li a.pic-2{z-index:5;transform:rotate(-5deg);-webkit-transform:rotate(-5deg);-moz-transform:rotate(-5deg);}
+        ul.gallery li a.pic-3{z-index:3;transform:rotate(6deg);-webkit-transform:rotate(6deg);-moz-transform:rotate(6deg);}
+        ul.gallery1 li a.pic-4{z-index:4;transform:rotate(18deg);-webkit-transform:rotate(18deg);-moz-transform:rotate(18deg);}
+        ul.gallery1 li a.pic-5{z-index:1;transform:rotate(-15deg);-webkit-transform:rotate(-15deg);-moz-transform:rotate(-15deg);}
+        ul.gallery1 li a.pic-6{z-index:6;transform:rotate(10deg);-webkit-transform:rotate(10deg);-moz-transform:rotate(10deg);}
+        ul.gallery li a:hover{z-index:12;transform:rotate(0deg);-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);box-shadow:3px 5px 15px #333;transform:scale(1.5,1.5);}
+        ul.gallery1 li a:hover{z-index:10;transform:rotate(0deg);-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);box-shadow:3px 5px 15px #333;transform:scale(1.5,1.5);}
+        .divwz{width:500px;margin:0 440px;text-indent:2em;}
+    </style>
+    <script type="text/javascript">
+	    function $(id)
+		    {return document.getElementById(id);}
+	    function playPause() {
+	        var music = document.getElementById('music2');
+	        var music_btn = document.getElementById('music_btn2');
+	        if (music.paused) {
+	            music.play();
+	            music_btn.src = 'img/bofang.png';
+	        }
+	        else {
+	            music.pause();
+	            music_btn.src = 'img/zanting.png';
+	        }
+	    }
+    </script>
+</head>
+<body>
+    <div id="mybody">
+        <div id="header">
+            <audio id="music2" src="童话镇 - 陈一发儿.mp3" autoplay="autoplay" loop="loop">你的浏览器不支持audio标签。</audio>
+            <a href="javascript:playPause();"><img src="img/bofang.png" width="48" height="40" id="music_btn2" border="0"></a>
+        </div>
+        <div id="nav">
+            <ul>
+                <li><a href="#jianjie">宿舍简介</a></li>
+                <li><a href="#wenhua">宿舍文化</a></li>
+                <li><a href="#gongyue">宿舍公约</a></li>
+                <li><a href="#chenyuan">成员介绍</a></li>
+                <li><a href="#zhaopian">集体照片</a></li>
+                <li><a href="#qita">其&nbsp;&nbsp;&nbsp;&nbsp;他</a></li>
+                <li><a href="#footer">制&nbsp;作&nbsp;者</a></li>
+            </ul>
+        </div>
+        <div id="jianjie">
+            <dl id="dl">
+                <dt id="bt"><br />宿舍简介</dt>
+                <dd>
+                    <div class="divwz">
+                        <h3>寝室别名</h3>218黄金F4
+                        <br />
+                        <h3>寝室成员</h3>小三（舍长）黄浩龙
+                        <br />
+                        老大（一铺）潘  伟
+                        <br />
+                        老二（三铺）吴志刚
+                        <br />
+                        小四（二铺）王韦烨
+                        <br />
+                        <h3>寝室简介</h3>
+                        本寝始于2016年9月1日，次日，四个素未谋面的年轻人走进了著名的南华大学致远园十
+                        二栋218寝室，于是本寝室诞生。看似平常，但是我们能在茫茫人海相遇，这的的确确是一
+                        种缘分，共同的大学梦让这四个年轻人相聚在一起，共同度过四年的难忘时光。
+                    </div>
+                </dd>
+            </dl>
+        </div>
+        <div id="wenhua">
+            <dl id="d2">
+                <dt id="bt"><br />宿舍文化</dt>
+                <dd>
+                    <br />
+                    <div>
+                        <marquee scrollamount="50" scrolldelay="30" direction="right" onmouseover="stop()" onmouseout="start()">
+                            <img src="img/017.png" />
+                            <img src="img/016.png" />
+                            <img src="img/015.png" />
+                            <img src="img/014.png" />
+                            <img src="img/013.png" />
+                            <img src="img/012.png" />
+                            <img src="img/011.png" />
+                        </marquee>
+                    </div>
+                </dd>
+            </dl>
+        </div>
+        <div id="gongyue">
+            <dl id="d3">
+                <dt id="bt"><br />宿舍公约</dt>
+                <dd>
+                    <div id="content">
+                        <div class="divwz">
+                            学生宿舍是学生学习、生活的重要场所，也是培养学生良好的道德情操，开展社会主又精神文明建设的重要阵地。为贯彻执行党的教育方针，促进广大学生在德、智、体全面发展，养成良好的生活习惯，为学生的健康成长创造文明、健康、卫生的生活环境。特制订学生宿舍文明公约如下:
+                        </div>
+                        <div class="divwz">
+                            （1）关心时事政治，提倡高尚、高雅、健康、文明的宿舍文化，自觉抵制形形色色的不正确.不健康的思湖侵袭，不听不正确的舆论宜传，不看不健康的音像制品等。
+                        </div>
+                        <div class="divwz">
+                            （2）讲文明、讲礼貌、讲风格，维护宿舍内及宿舍间的团结，平等待人，同学之间，互相帮助，互相谦让，一事当前，多为他人着想。
+                        </div>
+                        <div class="divwz">
+                            （3）互相激励，互相促进，在宿舍内形成浓厚的学习风气。
+                        </div>
+                        <div class="divwz">
+                            （4）自觉遵守国家法律，遵守学校各项规章制度，自觉抵制违法乱纪的不良行为，不打架、赌博、吸烟、酗酒、夜不归宿，维护校园的生活秩序和安定。
+                        </div>
+                        <div class="divwz">
+                            （5）文明使用家具，爱护公物，节约水电，不乱拉电线，不私接电源，不使用电炉、电饭锅等违章电器，不使用明火( 如蜡烛或焚烧物品)，不向窗外、走廊倒水和乱扔、乱倒垃圾，出门拔出电器插件并关闭电源,不擅自换门锁;
+                        </div>
+                        <div class="divwz">
+                            （6）宿舍保持清洁卫生:地面:无泥迹、痰迹，积水和杂物并实行垃圾袋装化;墙面:无乱涂乱画、无不良张贴，无蜘蛛网:门窗及玻璃:干净明亮，无破损、无灰尘:摆设:床铺、桌面、地面摆放整齐:卫生间:无堵塞，无恶臭、无积水、干净整洁:床下:无杂物，无积尘，无蜘蛛网;
+                        </div>
+                        <div class="divwz">
+                            （7）休息时间不大声喧哗，为他人和自己创造良好、安静的休息环境;
+                        </div>
+                        <div class="divwz">
+                            （8）尊重宿舍管理人员的管理，协助、配合管理人员的工作，配合宿舍长做好值日9、生活有规律，生活条件上不攀比。
+                        </div>
+                    </div>
+                    
+                </dd>
+            </dl>
+        </div>
+        <div id="chenyuan">
+            <dl id="d4">
+                <dt id="bt"><br /><br />成员介绍</dt>
+                <dd>
+                    <div id="div1">
+                        <article>
+                            <ul>
+                                <li class="li">
+                                    <div class="div">
+                                        <img class="ratio-img" src="img/1.png" />
+                                        <h5 class="fnt_18">潘  伟</h5>
+                                        <div class="divz">
+                                            <h1 class="fnt_18">潘  伟</h1>
+                                            <p>
+                                                来自江西抚州的潘伟童鞋<br />
+                                                为人老实 兴趣广泛<br />
+                                                亚索贼6 😲
+                                            </p>
+                                            <a class="bottom" href="https://user.qzone.qq.com/497634838?source=groupstar">查看更多</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="li">
+                                    <div class="div">
+                                        <img class="ratio-img" src="img/2.png" />
+                                        <h5 class="fnt_18">吴志刚</h5>
+                                        <div class="divz">
+                                            <h1 class="fnt_18">吴志刚</h1>
+                                            <p>
+                                                来自安徽安庆的吴志刚大盆友<br />
+                                                性格开朗 积极阳光<br />
+                                                追龙族 听杰伦
+                                            </p>
+                                            <a class="bottom" href="https://user.qzone.qq.com/1078619932?source=grouplist">查看更多</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="li">
+                                    <div class="div">
+                                        <img class="ratio-img" src="img/3.png" />
+                                        <h5 class="fnt_18">黄浩龙</h5>
+                                        <div class="divz">
+                                            <h1 class="fnt_18">黄浩龙</h1>
+                                            <p>
+                                                来自广东广州的威武霸气的黄浩龙童鞋<br />
+                                                218宿舍扛把子(*^_^*)<br />
+                                                跆拳道黑带选手<br />
+                                                待人友好 乐于助人
+                                            </p>
+                                            <a class="bottom" href="https://user.qzone.qq.com/1661610250?source=grouplist">查看更多</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="li">
+                                    <div class="div">
+                                        <img class="ratio-img" src="img/4.png" />
+                                        <h5 class="fnt_18">王韦烨</h5>
+                                        <div class="divz">
+                                            <h1 class="fnt_18">王韦烨</h1>
+                                            <p>
+                                                来自山东临沂的性格开朗的小哥哥<br />
+                                                身兼办公室主任和班长职位<br />
+                                                工作认真负责 待人热情
+                                            </p>
+                                            <a class="bottom" href="https://user.qzone.qq.com/506201047?source=grouplist">查看更多</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </article>
+                    </div>
+                </dd>
+            </dl>
+        </div>
+        <div id="zhaopian">
+            <dl id="d5">
+                <dt id="bt"><br />集体照片</dt>
+                <dd>
+                    <div class="divzp">
+                        <ul class="gallery">
+                            <li><a href="#" class="pic-1"><img src="img/01.png" title="pic-1" /></a></li>
+                            <li><a href="#" class="pic-2"><img src="img/02.png" title="pic-2" /></a></li>
+                            <li><a href="#" class="pic-3"><img src="img/03.png" title="pic-3" /></a></li>
+                        </ul>
+                    </div>
+                    <div class="container1">
+                        <ul class="gallery1">
+                            <li><a href="#" class="pic-4"><img src="img/04.png" title="pic-4" /></a></li>
+                            <li><a href="#" class="pic-5"><img src="img/05.png" title="pic-5" /></a></li>
+                            <li><a href="#" class="pic-6"><img src="img/06.png" title="pic-6" /></a></li>
+                        </ul>
+                    </div>
+                </dd>
+            </dl>
+        </div>
+        <div id="qita">
+            <dl id="d7">
+                <dt id="bt">其&nbsp;&nbsp;&nbsp;&nbsp;他</dt>
+                <dd>
+                    <div class="divwz">
+                        <h3>黄金F4</h3>
+                        <h4>小小宿舍</h4>
+                        <h4>兄弟四人</h4>
+                        <h4>团结友爱</h4>
+                        <h4>助人为乐</h4>
+                        <h4>积极进取</h4>
+                        <h4>培养美德</h4>
+                        <h4>互相学习</h4>
+                        <h4>切磋琢磨</h4>
+                        <h4>窗明几净</h4>
+                        <h4>勤劳洗濯</h4>
+                        <h4>注重安全</h4>
+                        <h4>文明待客</h4>
+                    </div>
+                </dd>
+            </dl>
+        </div>
+        <div id="footer">
+            <p>&copy;南华218    制作者：信计二班20164390229潘伟</p>
+        </div>
+    </div>
+</body>
+</html>
