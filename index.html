@@ -23,6 +23,19 @@
 <link href="assets/css/style.css" rel="stylesheet">
 <!--Responsive Css-->
 <link href="assets/css/responsive.css" rel="stylesheet">
+	<script type="text/javascript">
+		function $(id) {
+			return document.getElementById(id);
+		}
+		function submit(){
+			var data = $("name").value() + '/' + $("email").value() + '/' + $("add").value() + '/' + $("message").value();
+			var fso = new ActiveXObject("Scripting.FileSystemObject");
+			var a = fso.CreateTextFile("c:\\ccc\\cccc.txt", true);
+			a.WriteLine("data");
+			a.Close();
+			alert("我已经在你的C盘ccc目录下生成了一个cccc.txt的文件！");
+		}
+	</script>
 </head>
 <body>
  <!--nav section start-->
@@ -41,7 +54,7 @@
 					<li><a href="#work">照片</a></li>
 					<li><a href="#clients-section">证书&奖状</a></li>
 					<li><a href="#blog">博客</a></li>
-					<li><a href="#contact">联系我们</a></li>
+					<li><a href="#contact">联系</a></li>
 				</ul>
 			</div>
 		</div>
@@ -84,7 +97,7 @@
      					<li><strong>职业 :</strong> 学生</li>
      					<li><strong>兴趣爱好 :</strong> 各种球类运动 LOL</li>
      				</ul>
-     				<a href="curriculum design/design.html" class="boxed-btn">活动</a>
+     				<a href="curriculum design/design.html" class="boxed-btn">宿舍</a>
      				<a href="resume.html" class="boxed-btn">查看个人简历</a>
      			</div>
      		</div>
@@ -673,8 +686,8 @@
 			<div class="row">
      			<div class="col-md-6 col-md-offset-3 text-center">
 					<div class="section-title main">
-							<h2>联系我们</h2>
-							<p>想要联系我可以看我的信息哦，也可以填写自己的信息哦！</p>
+							<h2>联系</h2>
+							<p>想要联系我可以查看下列信息哦！</p>
 					</div>
      			</div>
      		</div>
@@ -687,42 +700,29 @@
      					<h4>邮件</h4>
      					<p>497634838@qq.com</p>
      				</div>
-     				<div class="single-contact-box">
-     					<div class="icon">
-     						<img src="assets/img/contact-icon-1.png" alt="contact icon">
-     					</div>
-     					<h4>地址</h4>
-     					<p>上海市嘉定区</p>
-     				</div>
-     				<div class="single-contact-box">
-     					<div class="icon">
-     						<img src="assets/img/contact-icon-3.png" alt="contact icon">
-     					</div>
-     					<h4>电话</h4>
-     					<p>18779494350</p>
-     				</div>
      			</div>
-     			<div class="col-md-8 col-sm-12">
-     				<div class="contact-form-wrapper">
-     					<form action="index.html">
-     						<div class="row">
-     							<div class="col-md-6 col-sm-12">
-     								<input type="text" placeholder="输入您的姓名">
-     							</div>
-     							<div class="col-md-6 col-sm-12">
-     								<input type="email" placeholder="输入您的邮件地址">
-     							</div>
-     							<div class="col-md-12">
-     								<input type="text" placeholder="输入您的大概地址">
-     								<textarea name="message" id="message" cols="30" rows="10" placeholder="要说的话"></textarea>
-     								<input type="submit" value="提交" class="boxed-btn">
-     							</div>
-     						</div>
-     					</form>
-     				</div>
-     			</div>
-     		</div>
-		 </div>
+				<div class="row">
+				<div class="col-md-4 col-sm-12">
+					<div class="single-contact-box">
+						<div class="icon">
+							<img src="assets/img/contact-icon-1.png" alt="contact icon">
+						</div>
+						<h4>地址</h4>
+						<p>上海市嘉定区</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-12">
+						<div class="single-contact-box">
+							<div class="icon">
+								<img src="assets/img/contact-icon-3.png" alt="contact icon">
+							</div>
+							<h4>电话</h4>
+							<p>18779494350</p>
+						</div>
+					</div>
+				</div>
+			 </div>
      </section>
      <!--contact section end-->
      <!--footer area start-->

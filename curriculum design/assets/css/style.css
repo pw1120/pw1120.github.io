@@ -1041,15 +1041,13 @@ section.blog-area {
   border: 1px solid #fff;
   background: #fff;
   box-shadow: 0 0 5px #ddd;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin-top: 40px;
+  padding-top: 10px;
+  padding-bottom: 13px;
   margin-bottom: 30px; }
   .single-contact-box h4 {
-    margin-top: 20px;
-    margin-bottom: 20px; }
+    margin-bottom: 10px; }
   .single-contact-box p {
-    margin-bottom: 30px; }
+    margin-bottom: 0; }
 
 .contact-form-wrapper input[type=text] {
   border: 1px solid #ddd;
